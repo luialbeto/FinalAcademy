@@ -26,13 +26,13 @@ public class ListaAccentureTestSteps{
 
     @Dado("clico no menu servicos")
     public void clico_no_menu_servicos() {
-        WebElement input = Config.browser.findElement(By.cssSelector("div[class = 'nav-submenu-label-text']"));
+        WebElement input = Config.browser.findElement(By.cssSelector("#primaryLink2_Servios"));
         input.click();
     }
 
     @Entao("devo ver os servicos abaixo")
     public void devo_ver_os_servicos_abaixo(io.cucumber.datatable.DataTable dataTable) {
-        assertEquals(true , Config.browser.findElements( By.cssSelector("div[class = 'gh-item nav-submenu-label']")).size() > 0);
+        assertEquals(true , Config.browser.findElements( By.cssSelector("[class = 'gh-item nav-submenu-label']")).size() > 0);
             Config.browser.quit();
 
         //assertEquals(true, Config.seletorQueryCssTodos("div[class = 'nav-item-links']").size(>0));

@@ -1,4 +1,4 @@
-package io.cucumber.hopper;
+/* package io.cucumber.hopper;
 
 import static org.junit.Assert.assertEquals;
 
@@ -59,3 +59,4 @@ public class LgpdTestSteps{
     public void devo_ver(String string) {
     }
 }
+ */

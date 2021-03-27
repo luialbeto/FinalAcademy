@@ -6,7 +6,7 @@ Funcionalidade: listar servicos da Accenture
     Cenario: listar servicos da Accenture
     Dado que eu estou no site da accenture
     E clico no menu servicos
-        Entao devo ver os servicos abaixo
+    Entao devo ver os servicos abaixo
             | Accenture Strategy           |
             | Application Services         |
             | Artificial Intelligence      |
