@@ -17,7 +17,6 @@ public class LgpdTestSteps{
 
     public LgpdTestSteps() {
         System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
-        browser = new ChromeDriver();
     }    
 
     
@@ -30,29 +29,30 @@ public class LgpdTestSteps{
 
     @Dado("aceito os termos LGPD")
     public void aceito_os_termos_LGPD() {
-        WebElement input = browser.findElement(By.cssSelector("button[class='save-preference-btn-handler onetrust-close-btn-handler']"));
+        WebElement input = Config.browser.findElement(By.cssSelector("#onetrust-pc-btn-handler"));
         input.click();
         
     }
 
     @Entao("deve fechar a caixa de informacao")
     public void deve_fechar_a_caixa_de_informacao() {
-        WebElement input = browser.findElement(By.cssSelector("#close-pc-btn-handler"));
+        WebElement input = Config.browser.findElement(By.cssSelector("#close-pc-btn-handler"));
         input.click();
         Config.fechar();
     }
 
     @Dado("clico em configuracoes de cookie")
     public void clico_em_configuracoes_de_cookie() {
-        WebElement input = browser.findElement(By.cssSelector("#optanon-minimize-button"));
+        WebElement input = Config.browser.findElement(By.cssSelector("#optanon-minimize-button"));
         input.click();
     }
 
     
     @Entao("devo ver o item de {string}")
-    public void devo_ver_o_item_de(String string) {
-        WebElement input = browser.findElement(By.cssSelector("#privacy-text")).getText();
-        assertEquals(string, input);     
+    public void devo_ver_o_item_de(String cookies) {
+        String input = Config.browser.findElement(By.cssSelector("#privacy-text"));
+        assertEquals(string, input.getText());
+    
     }
 
     @Entao("devo ver {string}")
