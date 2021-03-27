@@ -2,7 +2,7 @@
 Funcionalidade: listar servicos da Accenture 
   O objetivo e acessar o site accenture e clicar no menu servicos
   
-    @ignore
+    
     Cenario: listar servicos da Accenture
     Dado que eu estou no site da accenture
     E clico no menu servicos

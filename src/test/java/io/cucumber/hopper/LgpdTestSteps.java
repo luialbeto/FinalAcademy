@@ -48,9 +48,9 @@ public class LgpdTestSteps{
     }
 
     
-    @Entao("devo ver o item de {string}")
-    public void devo_ver_o_item_de(String cookies) {
-        String input = Config.browser.findElement(By.cssSelector("#privacy-text"));
+  @Entao("devo ver o item de {string}")
+    public void devo_ver_o_item_de(String string) {
+        WebElement input = Config.browser.findElement(By.cssSelector("#privacy-text"));
         assertEquals(string, input.getText());
     
     }
