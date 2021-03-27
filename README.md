@@ -40,3 +40,7 @@ Este projeto foi desenvolvido principalmente em Java, utilizando para fazer os t
 - [Mauricio Nazario do Carmo](https://github.com/Mauricio-Nazario)
 - [Natalia Luiza Freire Botelho](https://github.com/natalialfbotelho)
 - [Sigrid Rodrigues](https://github.com/sigrid-fr)
+
+
+7- Vídeo com nossa rotina real de trabalho
+
