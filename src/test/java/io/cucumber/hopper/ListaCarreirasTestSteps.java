@@ -16,11 +16,11 @@ public class ListaCarreirasTestSteps{
         Config.abrir("https://www.accenture.com/br-pt");
     }
 
-    @Dado("clico no item do menu vagas em tecnologia")
-    public void clico_no_item_do_menu_vagas_em_tecnologia() {
-    
+    @Dado("clico no menu carreiras")
+    public void clico_no_menu_carreiras() {
+        WebElement input = Config.browser.findElement(By.cssSelector("div[class="expand-collapse-container visible-md visible-xs visible-sm"]"));
+        input.click();
     }
-
 
     @Entao("devo ver o destaque em {string}")
 

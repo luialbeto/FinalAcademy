@@ -2,7 +2,6 @@
 Funcionalidade: Ver as caracteristicas da accenture
               Devemos entrar no site da accenture, clicar no item menu e ver o item nosso proposito
 
-        @ignore
         Cenário: Ver as caracteristicas da accenture
             Dado que eu estou no site da accenture 5
               E fecho a janela 2

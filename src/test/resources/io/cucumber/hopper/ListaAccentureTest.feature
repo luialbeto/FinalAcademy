@@ -1,8 +1,8 @@
-# language: pt
+      # language: pt
 Funcionalidade: listar servicos da Accenture
-  O objetivo e acessar o site accenture e clicar no menu servicos
-  
-    
+      O objetivo e acessar o site accenture e clicar no menu servicos
+
+        @ignore
         Cenario: listar servicos da Accenture
             Dado que eu estou no site da accenture 2
               E fecho a janela 1

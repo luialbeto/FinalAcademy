@@ -43,7 +43,7 @@ public class LgpdTestSteps{
 
     @Dado("clico em configuracoes de cookie")
     public void clico_em_configuracoes_de_cookie() {
-        WebElement input = Config.browser.findElement(By.cssSelector("#optanon-minimize-button"));
+        WebElement input = Config.browser.findElement(By.cssSelector("#optanon-minimize-wrapper"));
         input.click();
     }
 
