@@ -1,4 +1,4 @@
-/* package io.cucumber.hopper;
+package io.cucumber.hopper;
 
 import static org.junit.Assert.assertEquals;
 
@@ -20,8 +20,8 @@ public class LgpdTestSteps{
     }    
 
     
-    @Dado("que eu estou no site da accenture")
-    public void que_eu_estou_no_site_da_accenture() {
+    @Dado("que eu estou no site da accenture 1")
+    public void que_eu_estou_no_site_da_accenture_1() {
         Config.abrir("https://www.accenture.com/br-pt");
     }
 
@@ -48,7 +48,7 @@ public class LgpdTestSteps{
     }
 
     
-  @Entao("devo ver o item de {string}")
+    @Entao("devo ver o item de {string}")
     public void devo_ver_o_item_de(String string) {
         WebElement input = Config.browser.findElement(By.cssSelector("#privacy-text"));
         assertEquals(string, input.getText());
@@ -59,4 +59,3 @@ public class LgpdTestSteps{
     public void devo_ver(String string) {
     }
 }
- */
