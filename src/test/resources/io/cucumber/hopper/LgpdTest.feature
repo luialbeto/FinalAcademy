@@ -14,8 +14,7 @@ Funcionalidade: Acessar o site da Accenture
               E aceito os termos LGPD
               E clico em configuracoes de cookie
              Entao devo ver o item de "Sua privacidade"
-              E devo ver <cookies>
-        Examples:
+              E devo ver cookies
                   | Cookies estritamente necessarias           |
                   | Cookies Analiticos de Primeira Parte       |
                   | Cookies de Desempenho e Cookies Funcionais |
