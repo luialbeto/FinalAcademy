@@ -24,11 +24,16 @@ Este projeto foi desenvolvido principalmente em Java, utilizando para fazer os t
 
 4- Baixar zip ou clonar o repositório
   
-5- Abrir o terminal no VScode, caminhar até a pasta do projeto, para rodar o teste, executar o seguinte comando:
+5- Abrir o terminal no [VScode](https://code.visualstudio.com/), caminhar até a pasta do projeto, para rodar o teste, executar o seguinte comando:
 
-- ```./test.bat```
+- ```./test.bat```- Windows
+- ```./test.sh``` - Linux / MacOS
 
 6- Se tudo tiver corrido bem, vai aparecer no seu terminal Build Sucess
+
+7- Vídeo com nossa rotina real de trabalho
+
+      https://youtu.be/93lSr3it7jk
 
 ## 🎨 Autores 
 - [Bruna Roberta Andrade dos Anjos](https://github.com/brunardosanjos)

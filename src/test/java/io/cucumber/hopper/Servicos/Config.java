@@ -16,6 +16,8 @@ public class Config {
             browser = new ChromeDriver();
         }
         browser.get(url);
+        browser.manage().window().maximize();
+
     }
 
     public static void fechar(){
