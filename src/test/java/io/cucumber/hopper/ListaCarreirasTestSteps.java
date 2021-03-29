@@ -1,44 +1,51 @@
 package io.cucumber.hopper;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import io.cucumber.hopper.Servicos.Config;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 
-public class ListaCarreirasTestSteps{
-    @Dado("que eu estou no site da accenture 3")
-    public void que_eu_estou_no_site_da_accenture_3() {
-        Config.abrir("https://www.accenture.com/br-pt");
-    }
+public class ListaCarreirasTestSteps {
 
     @Dado("clico no menu carreiras")
-    public void clico_no_menu_carreiras() {
-        WebElement input = Config.browser.findElement(By.cssSelector("div[data-id='primaryLink4_Carreiras']"));
-        input.click();
+    public void clicarNoMenuCarreiras() {
+        Config.cssSelector(".nav-submenu:nth-child(4)").click();
     }
 
-    @Entao("devo ver o destaque em {string}")
+    @Dado("clico no item do menu vagas em tecnologia")
+    public void clicarNoItemVagasEmTecnologia() throws InterruptedException {
+        Thread.sleep(3000);
+        Config.linkText("Vagas em tecnologia").click();
+    }
 
-    public void devo_ver_o_destaque(String string) {
+    @Entao("devo ver o destaque {string}")
+    public void verODestaque(String string) {
+        assertEquals(string, Config.cssSelector(".page-title-long").getText());
+        Config.fecharPagina();
+    }
 
+    @Dado("clico em procure por vagas")
+    public void procurarPorVagas() throws InterruptedException {
+        Thread.sleep(3000);
+        Config.cssSelector("a[href='/br-pt/careers/jobsearch']").click();
     }
 
     @Dado("digito no campo de busca {string}")
-    public void digito_no_campo_de_busca(String string) {
-        WebElement input = Config.browser.findElement(By.cssSelector("#search-form-label");
-        input.type("DESENVOLVEDOR");
+    public void digitarNoCampoDeBusca(String string) throws InterruptedException {
+        Config.byId("job-search-hero-bar").sendKeys(string);
     }
 
     @Dado("clico no botao procurar")
-    public void clico_no_botao_procurar() {
-        WebElement input = Config.browser.findElement(By.cssSelector(".search-text");
-        input.click();
+    public void clicarNoBotaoProcurar() throws InterruptedException {
+        Config.cssSelector(".btn-primary.col-xs-12").click();
+        Thread.sleep(4000);
     }
 
     @Entao("devo encontrar vagas para programadores")
-    public void devo_encontrar_vagas_para_programadores() {
-
+    public void encontrarVagasParaProgramadores() {
+        assertEquals(true, Config.cssSelectors(".search-results-text").size() > 0);
+        Config.fecharPagina();
     }
+
 }

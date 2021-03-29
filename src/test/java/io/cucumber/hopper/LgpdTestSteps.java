@@ -1,57 +1,57 @@
 package io.cucumber.hopper;
 
-import static org.junit.Assert.assertEquals;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import io.cucumber.hopper.Servicos.Config;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 
-public class LgpdTestSteps{
-
-    public LgpdTestSteps() {
-        System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
-    }    
-
-    
-    @Dado("que eu estou no site da accenture 1")
-    public void que_eu_estou_no_site_da_accenture_1() {
-        Config.abrir("https://www.accenture.com/br-pt");
-    }
-
-    
+public class LgpdTestSteps {
 
     @Dado("aceito os termos LGPD")
-    public void aceito_os_termos_LGPD() {
-        WebElement input = Config.browser.findElement(By.cssSelector("#onetrust-pc-btn-handler"));
-        input.click();
-        
+    public void aceitarTermosLgpd() {
+        Config.cssSelector("#onetrust-pc-btn-handler").click();
     }
 
     @Entao("deve fechar a caixa de informacao")
-    public void deve_fechar_a_caixa_de_informacao() {
-        WebElement input = Config.browser.findElement(By.cssSelector("#close-pc-btn-handler"));
-        input.click();
-        Config.fechar();
+    public void fecharCaixaDeInformacao() {
+        Config.cssSelector("#close-pc-btn-handler");
+        Config.fecharPagina();
     }
 
     @Dado("clico em configuracoes de cookie")
-    public void clico_em_configuracoes_de_cookie() {
-        WebElement input = Config.browser.findElement(By.cssSelector("#optanon-minimize-wrapper"));
-        input.click();
+    public void clicarEmConfiguracoesDeCookie() throws InterruptedException {
+        Thread.sleep(2000);
+        Config.cssSelector("#onetrust-pc-btn-handler").click();
     }
 
-    
     @Entao("devo ver o item de {string}")
-    public void devo_ver_o_item_de(String string) {
-        WebElement input = Config.browser.findElement(By.cssSelector("#privacy-text"));
-        assertEquals(string, input.getText());
-    
+    public void verOItemSuaPrivacidade(String string) throws InterruptedException {
+        Thread.sleep(3000);
+        assertEquals(string, Config.cssSelector(".active-group").getText());
     }
 
     @Entao("devo ver {string}")
-    public void devo_ver(String string) {
+    public void verCookies(String string) {
+        switch (string) {
+        case "Cookies estritamente necessárias":
+            assertEquals(true, Config.cssSelectors("#ot-header-id-1").size() > 0);
+            break;
+
+        case "Cookies Analiticos de Primeira Parte":
+            assertEquals(true, Config.cssSelectors("#ot-header-id-2").size() > 0);
+            break;
+
+        case "Cookies de Desempenho e Cookies Funcionais":
+            assertEquals(true, Config.cssSelectors("#ot-header-id-3").size() > 0);
+            break;
+
+        case "Cookies de Publicidade e Redes Sociais":
+            assertEquals(true, Config.cssSelectors("#ot-header-id-4").size() > 0);
+            break;
+        }
+        string = null;
+
     }
+
 }

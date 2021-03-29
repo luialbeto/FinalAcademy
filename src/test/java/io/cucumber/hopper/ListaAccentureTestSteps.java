@@ -1,47 +1,124 @@
 package io.cucumber.hopper;
 
-import static org.junit.Assert.assertEquals;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import io.cucumber.java.pt.E;
-import io.cucumber.java.pt.Dado;
-import io.cucumber.java.pt.Entao;
-import io.cucumber.java.pt.Quando;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import io.cucumber.hopper.Servicos.Config;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
 
-public class ListaAccentureTestSteps{
-
-    
-    @Dado("que eu estou no site da accenture 2")
-    public void que_eu_estou_no_site_da_accenture_2() {
-        Config.abrir("https://www.accenture.com/br-pt");
-
-    }
-    @E("fecho a janela 1")
-    public void fecho_a_janela_1() {
-        WebElement input = Config.browser.findElement(By.cssSelector("#onetrust-close-btn-container"));
-        input.click();
-    }
+public class ListaAccentureTestSteps {
 
     @Dado("clico no menu servicos")
-    public void clico_no_menu_servicos() {
-        //assertEquals("Serviços",Config.browser.findElement(By.cssSelector("#primaryLink2_Servios")).getText());
-        WebElement input = Config.browser.findElement(By.cssSelector("div['data-target=#primaryLink2_Servios']"));
-        input.click();
+    public void clicarNoMenuServicos() {
+        Config.cssSelector(".nav-submenu:nth-child(2)").click();
     }
 
-    @Entao("devo ver os servicos abaixo")
-    public void devo_ver_os_servicos_abaixo(io.cucumber.datatable.DataTable dataTable) {
-        assertEquals(true , Config.browser.findElements(By.cssSelector("['gh-item nav-submenu-label']")).size() > 0);
-            Config.browser.quit();
-
-        //assertEquals(true, Config.seletorQueryCssTodos("div[class = 'nav-item-links']").size(>0));
-        //Config.selectorQueryCss("div[class = 'nav-item-links']");
-        //Config.fechar();
+    @Entao("devo ver o servico Accenture Strategy")
+    public void verOsServicos() {
+        assertEquals(true, Config.cssSelectors("[aria-label='Accenture Strategy']").size() > 0);
     }
 
+    @Dado("devo ver o servico {string}")
+    public void verServicos(String string) throws InterruptedException {
+        Thread.sleep(2000);
+        switch (string) {
+        case "Application Services":
+            assertEquals(true, Config.cssSelectors("[aria-label='Application Services']").size() > 0);
+
+        case "Artificial Intelligence":
+            assertEquals(true, Config.cssSelectors("[aria-label='Artificial Intelligence']").size() > 0);
+            break;
+
+        case "Automation":
+            assertEquals(true, Config.cssSelectors("[aria-label='Automation']").size() > 0);
+            break;
+
+        case "Business Process Services":
+            assertEquals(true, Config.cssSelectors("[aria-label='Business Process Services']").size() > 0);
+            break;
+
+        case "Change Management":
+            assertEquals(true, Config.cssSelectors("[aria-label='Change Management']").size() > 0);
+            break;
+
+        case "Cloud":
+            assertEquals(true, Config.cssSelectors("[aria-label='Cloud']").size() > 0);
+            break;
+
+        case "Customer Experience":
+            assertEquals(true, Config.cssSelectors("[aria-label='Customer Experience']").size() > 0);
+            break;
+
+        case "Data & Analytics":
+            assertEquals(true, Config.cssSelectors("[aria-label='Data & Analytics']").size() > 0);
+            break;
+
+        case "Ecosystem Partners":
+            assertEquals(true, Config.cssSelectors("[aria-label='Ecosystem Partners']").size() > 0);
+            break;
+
+        case "Finance Consulting":
+            assertEquals(true, Config.cssSelectors("[aria-label='Finance Consulting']").size() > 0);
+            break;
+
+        case "Industry X":
+            assertEquals(true, Config.cssSelectors("[aria-label='Industry X']").size() > 0);
+            break;
+
+        case "Infrastructure":
+            assertEquals(true, Config.cssSelectors("[aria-label='Infrastructure']").size() > 0);
+            break;
+
+        case "Marketing":
+            assertEquals(true, Config.cssSelectors("[aria-label='Marketing']").size() > 0);
+            break;
+
+        case "Mergers & Acquisitions (M&A)":
+            assertEquals(true, Config.cssSelectors("[aria-label='Mergers & Acquisitions (M&A)']").size() > 0);
+            break;
+
+        case "Operating Models":
+            assertEquals(true, Config.cssSelectors("[aria-label='Operating Models']").size() > 0);
+            break;
+
+        case "Security":
+            assertEquals(true, Config.cssSelectors("[aria-label='Security']").size() > 0);
+            break;
+
+        case "Supply Chain Management":
+            assertEquals(true, Config.cssSelectors("[aria-label='Supply Chain Management']").size() > 0);
+            break;
+
+        case "Sustainability":
+            assertEquals(true, Config.cssSelectors("[aria-label='Sustainability']").size() > 0);
+            break;
+
+        case "Technology Consulting":
+            assertEquals(true, Config.cssSelectors("[aria-label='Technology Consulting']").size() > 0);
+            break;
+
+        case "Technology Innovation":
+            assertEquals(true, Config.cssSelectors("[aria-label='Technology Innovation']").size() > 0);
+            break;
+
+        case "Zero Based Budgeting (ZBB)":
+            assertEquals(true, Config.cssSelectors("[aria-label='Zero Based Budgeting (ZBB)']").size() > 0);
+            break;
+        }
+
+        string = null;
+    }
+
+    @Dado("clico no item do menu cloud")
+    public void clicarNoItemDoMenuCloud() throws InterruptedException {
+        Thread.sleep(5000);
+        Config.cssSelector("a[href='/br-pt/services/cloud-index']").click();
+    }
+
+    @Entao("devo encontrar o titulo {string}")
+    public void encontrarOTitulo(String string) {
+        String textoElement = Config.cssSelector("h1[class='rte-inline col-xs-12 page-title ']").getText();
+        assertEquals("Serviços de Cloud", textoElement);
+        Config.fecharPagina();
+    }
 }
