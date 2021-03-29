@@ -41,5 +41,6 @@ Este projeto foi desenvolvido principalmente em Java, utilizando para fazer os t
 - [Luiz ALberto Suares Araujo](https://github.com/luialbeto)
 - [Karine Santos](https://github.com/Karinecasant)
 - [Mauricio Nazario do Carmo](https://github.com/Mauricio-Nazario)
-- [Natalia Luiza Freire Botelho](https://github.com/natalialfbotelho)
+- [Natalia Luiza Freire Botelho](https://github.com/natalialfbotelho) 
+ [![Linkedin Badge](https://img.shields.io/badge/-Natália-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/natalialfbotelho/)](https://www.linkedin.com/in/natalialfbotelho/)
 - [Sigrid Rodrigues](https://github.com/sigrid-fr)
