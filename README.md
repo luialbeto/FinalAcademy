@@ -178,44 +178,26 @@ mvnw.cmd clean
  
 ---------------------------------------------------------------------------
 
-### Estrutura de Arquivos
-
+## Estrutura de Arquivos
+<pre>
 driver 
-
-      |-- chromedriver -- Este é o arquivo do selenium webdriver, substitua este arquivo com a versão da sua máquina
-
-  mvnw
-
-  mvnw.cmd
-
-  pom.xml
-
-  src
-
-    |-- test
-
-    |  |-- java
-
-    |  |  |-- io
-
-    |  |  |  |-- cucumber
-
-    |  |  |  |  |-- danilo
-
-    |  |  |  |  |  |-- RunCucumberTest.java -- Arquivo que configura a inicialização do Java test 
- 
-    |  |  |  |  |  |-- ValidarCpfStep.java -- Passos escritos em java com selenium abrindo o browser e testando a aplicação
-
-    |  |-- resources
-
-    |  |  |-- io
-
-    |  |  |  |-- cucumber
-
-    |  |  |  |  |-- danilo
-
-    |  |  |  |  |  |-- validadorCpf.feature -- Gherkin com os cenários de teste de acordo com o meu cliente
-
-  test.bat -- Arquivo para rodar teste no Windows
-
-  test.sh -- Arquivo para rodar teste no Unix
+      |-- chromedriver -- Este é o arquivo do selenium webdriver, substitua este arquivo com a versão da sua máquina<br>
+  mvnw<br>
+  mvnw.cmd<br>
+  pom.xml<br>
+  src<br>
+    |-- test<br>
+    |  |-- java<br>
+    |  |  |-- io<br>
+    |  |  |  |-- cucumber<br>
+    |  |  |  |  |-- hopper<br>
+    |  |  |  |  |  |-- RunCucumberTest.java -- Arquivo que configura a inicialização do Java test<br>
+    |  |  |  |  |  |-- ValidarCpfStep.java -- Passos escritos em java com selenium abrindo o browser e testando a aplicação<br>
+    |  |-- resources<br>
+    |  |  |-- io<br>
+    |  |  |  |-- cucumber<br>
+    |  |  |  |  |-- hopper<br>
+    |  |  |  |  |  |-- validadorCpf.feature -- Gherkin com os cenários de teste de acordo com o meu cliente<br>
+  test.bat -- Arquivo para rodar teste no Windows<br>
+  test.sh -- Arquivo para rodar teste no Unix<br>
+</pre>
