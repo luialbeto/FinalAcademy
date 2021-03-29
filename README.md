@@ -5,8 +5,7 @@
 
 # Equipe: QA Hopper
 🎨 Autores: <br>
-<ul>
-##  
+<ul>  
 - [![Linkedin Badge](https://img.shields.io/badge/-Bruna-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruna-andrade-9958381b8/)](https://www.linkedin.com/in/bruna-andrade-9958381b8/) [Bruna Roberta Andrade dos Anjos](https://github.com/brunardosanjos)  	
 - [![Linkedin Badge](https://img.shields.io/badge/-Higea-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/higeasouza/)][Higea Celly Souza Barbosa](https://github.com/higeasouza)
 - [![Linkedin Badge](https://img.shields.io/badge/-Luiz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/karine-santos-8023b6127/)](https://www.linkedin.com/in/araujoluiz/)[Luiz ALberto Suares Araujo](https://github.com/luialbeto) 
