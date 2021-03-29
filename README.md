@@ -1,6 +1,7 @@
 ![](https://img.shields.io/badge/java-v.1.8-blue.svg)
 ![](https://img.shields.io/badge/cucumber-v.0.0.1-yellow.svg)
-![](https://img.shields.io/badge/selenium-v.3.141.59-green.svg)
+![](https://img.shields.io/badge/selenium-v.3.141.59-green.svg)3.3
+![](https://img.shields.io/badge/maven-v.3.3-pink.svg)
 
 # :computer: Equipe QA Hopper :computer:
 
