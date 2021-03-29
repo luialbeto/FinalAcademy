@@ -2,9 +2,18 @@
 ![](https://img.shields.io/badge/cucumber-v.0.0.1-yellow.svg)
 ![](https://img.shields.io/badge/selenium-v.3.141.59-green.svg)
 
-# FinalAcademy
-
 # :computer: Equipe QA Hopper :computer:
+
+## 🎨 Integrantes 
+- [![Linkedin Badge](https://img.shields.io/badge/-Bruna-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruna-andrade-9958381b8/)](https://www.linkedin.com/in/bruna-andrade-9958381b8/) [Bruna Roberta Andrade dos Anjos](https://github.com/brunardosanjos)  	
+- [Higea Celly Souza Barbosa](https://github.com/higeasouza)
+- [![Linkedin Badge](https://img.shields.io/badge/-Luiz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/karine-santos-8023b6127/)](https://www.linkedin.com/in/araujoluiz/)[Luiz ALberto Suares Araujo](https://github.com/luialbeto) 
+- [![Linkedin Badge](https://img.shields.io/badge/-Karine-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/karine-santos-8023b6127/)](https://www.linkedin.com/in/karine-santos-8023b6127/) [Karine Carolina dos Santos](https://github.com/Karinecasant)  
+- [![Linkedin Badge](https://img.shields.io/badge/-Mauricio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mauricionazario/)](https://www.linkedin.com/in/mauricionazario/) [Mauricio Nazario do Carmo](https://github.com/Mauricio-Nazario)
+- [![Linkedin Badge](https://img.shields.io/badge/-Natália-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/natalialfbotelho/)](https://www.linkedin.com/in/natalialfbotelho/) [Natalia Luiza Freire Botelho](https://github.com/natalialfbotelho)  
+- [![Linkedin Badge](https://img.shields.io/badge/-Sigrid-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sigrid-rodrigues/)](https://www.linkedin.com/in/sigrid-rodrigues/) [Sigrid Rodrigues](https://github.com/sigrid-fr)
+
+---------------------------------------------------------------------------
 
 ## Descrição do Desafio
 ### Criar uma aplicação Selenium com os seguintes casos de teste
@@ -87,6 +96,8 @@ e clico no menu sobre a accenture<br>
 e clico no item do menu sobre a accenture<br>
 Então devo ver o destaque em "Nosso propósito"<br>
 
+---------------------------------------------------------------------------
+
 ## Tecnologias utilizadas
 :heavy_check_mark: <b>Java</b><br>
 Linguagem de programação para desenvolvimento da aplicação<br>
@@ -100,37 +111,111 @@ Framework responsável por traduzir uma linguagem humana em código Java<br>
 :heavy_check_mark: <b>Selenium</b><br>
 Framework responsável por fazer a integração do código java com a linguagem Gutking(Cucumber) abrindo o browser fazendo o teste de comportamento<br>
 
+---------------------------------------------------------------------------
 
-## Pré-requisitos
-Este projeto foi desenvolvido principalmente em Java, utilizando para fazer os testes Cucumber e Selenium. 
+## 🚀 Como Utilizar 
+### Pré-requisitos
 
+1- Instalar o java: https://www.java.com/pt-BR/download/ie_manual.jsp?locale=pt_BR
 
-## 🚀 Guia de Uso
+2- Instalar jdk https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html
 
-### Passos para rodar o projeto:
+4- Verificar se o JAVA_HOME está configurado em seu computador
 
-1- Baixar, instalar e configurar o Java JDK na máquina versão 1.8
+5- Clone do projeto
 
-2- Baixar e instalar o VScode (O programa auxilia o programador com algumas requisições necessárias, de acordo com o que é aberto por ele)
+```bash
+git clone https://github.com/luialbeto/FinalAcademy.git
+ ```
 
-4- Baixar zip ou clonar o repositório
-  
-5- Abrir o terminal no [VScode](https://code.visualstudio.com/), caminhar até a pasta do projeto, para rodar o teste, executar o seguinte comando:
+6- Entrando na pasta do projeto
+```bash
+cd luialbeto-FinalAcademy
+ ```
 
+7- Configurando selenium em seu computador
+Fazer o download do Chrome Webdriver e colocar o arquivo descompactado dentro da pasta na raiz do projeto:<br>
+https://chromedriver.chromium.org/downloads
+
+Exemplo:<br>
+```bash
+cd driver
+curl https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+rm -rf chromedriver_linux64.zip
+cd ../driver
+ ```
+
+8- Limpando e validando maven Unix
+ ```bash
+./mvnw clean
+ ```
+
+ 9- Limpando e validando maven Windows
+ ```bash
+mvnw.cmd clean
+ ```
+
+10- Limpando e validando no Unix
+ ```bash
+mvnw.cmd clean
+ ```
+
+11- Limpando e validando maven Windows
+ ```bash
+mvnw.cmd clean
+ ```
+ 
+12- Abrir o terminal no [VScode](https://code.visualstudio.com/), caminhar até a pasta do projeto, para rodar o teste, executar o seguinte comando:
 - ```./test.bat```- Windows
 - ```./test.sh``` - Linux / MacOS
 
-6- Se tudo tiver corrido bem, vai aparecer no seu terminal Build Sucess
+13- Se tudo tiver corrido bem, vai aparecer no seu terminal Build Sucess
 
-7- Vídeo com nossa rotina real de trabalho
+14- Vídeo com nossa rotina real de trabalho
 
-      https://youtu.be/93lSr3it7jk
+ https://youtu.be/93lSr3it7jk
+ 
+---------------------------------------------------------------------------
 
-## 🎨 Autores 
-- [![Linkedin Badge](https://img.shields.io/badge/-Bruna-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruna-andrade-9958381b8/)](https://www.linkedin.com/in/bruna-andrade-9958381b8/) [Bruna Roberta Andrade dos Anjos](https://github.com/brunardosanjos)  	
-- [Higea Celly Souza Barbosa](https://github.com/higeasouza)
-- [![Linkedin Badge](https://img.shields.io/badge/-Luiz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/karine-santos-8023b6127/)](https://www.linkedin.com/in/araujoluiz/)[Luiz ALberto Suares Araujo](https://github.com/luialbeto) 
-- [![Linkedin Badge](https://img.shields.io/badge/-Karine-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/karine-santos-8023b6127/)](https://www.linkedin.com/in/karine-santos-8023b6127/) [Karine Carolina dos Santos](https://github.com/Karinecasant)  
-- [Mauricio Nazario do Carmo](https://github.com/Mauricio-Nazario)
-- [![Linkedin Badge](https://img.shields.io/badge/-Natália-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/natalialfbotelho/)](https://www.linkedin.com/in/natalialfbotelho/) [Natalia Luiza Freire Botelho](https://github.com/natalialfbotelho)  
-- [Sigrid Rodrigues](https://github.com/sigrid-fr)
+### Estrutura de Arquivos
+
+driver 
+
+      |-- chromedriver -- Este é o arquivo do selenium webdriver, substitua este arquivo com a versão da sua máquina
+
+  mvnw
+
+  mvnw.cmd
+
+  pom.xml
+
+  src
+
+    |-- test
+
+    |  |-- java
+
+    |  |  |-- io
+
+    |  |  |  |-- cucumber
+
+    |  |  |  |  |-- danilo
+
+    |  |  |  |  |  |-- RunCucumberTest.java -- Arquivo que configura a inicialização do Java test 
+ 
+    |  |  |  |  |  |-- ValidarCpfStep.java -- Passos escritos em java com selenium abrindo o browser e testando a aplicação
+
+    |  |-- resources
+
+    |  |  |-- io
+
+    |  |  |  |-- cucumber
+
+    |  |  |  |  |-- danilo
+
+    |  |  |  |  |  |-- validadorCpf.feature -- Gherkin com os cenários de teste de acordo com o meu cliente
+
+  test.bat -- Arquivo para rodar teste no Windows
+
+  test.sh -- Arquivo para rodar teste no Unix
