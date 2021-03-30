@@ -6,13 +6,14 @@
 # Equipe: QA Hopper
 🎨 Autores: <br>
 
-- [![Linkedin Badge](https://img.shields.io/badge/-Bruna-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruna-andrade-9958381b8/)](https://www.linkedin.com/in/bruna-andrade-9958381b8/) [Bruna Roberta Andrade dos Anjos](https://github.com/brunardosanjos)  	
-- [![Linkedin Badge](https://img.shields.io/badge/-Higea-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/higeasouza/)][Higea Celly Souza Barbosa](https://github.com/higeasouza)
-- [![Linkedin Badge](https://img.shields.io/badge/-Luiz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/karine-santos-8023b6127/)](https://www.linkedin.com/in/araujoluiz/)[Luiz ALberto Suares Araujo](https://github.com/luialbeto) 
-- [![Linkedin Badge](https://img.shields.io/badge/-Karine-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/karine-santos-8023b6127/)](https://www.linkedin.com/in/karine-santos-8023b6127/) [Karine Santos](https://github.com/Karinecasant)
-- [![Linkedin Badge](https://img.shields.io/badge/-Mauricio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mauricionazario/)](https://www.linkedin.com/in/mauricionazario/) [Mauricio Nazario do Carmo](https://github.com/Mauricio-Nazario)
-- [![Linkedin Badge](https://img.shields.io/badge/-Natália-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/natalialfbotelho/)] (https://www.linkedin.com/in/natalialfbotelho/) [Natalia Luiza Freire Botelho](https://github.com/natalialfbotelho) 
-- [![Linkedin Badge](https://img.shields.io/badge/-Sigrid-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sigrid-rodrigues/)](https://www.linkedin.com/in/sigrid-rodrigues/) [Sigrid Rodrigues](https://github.com/sigrid-fr)
+- [![Linkedin Badge](https://img.shields.io/badge/-Bruna-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bruna-andrade-9958381b8/)](https://www.linkedin.com/in/bruna-andrade-9958381b8/)[Bruna Roberta Andrade dos Anjos](https://github.com/brunardosanjos)
+- [![Linkedin Badge](https://img.shields.io/badge/-Higea-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/higeasouza/)](https://www.linkedin.com/in/higeasouza/)[Higea Celly Souza Barbosa](https://github.com/higeasouza)
+- [![Linkedin Badge](https://img.shields.io/badge/-Luiz-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/araujoluiz/)](https://www.linkedin.com/in/araujoluiz/)[Luiz ALberto Suares Araujo](https://github.com/luialbeto) 
+- [![Linkedin Badge](https://img.shields.io/badge/-Karine-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/karine-santos-8023b6127/)](https://www.linkedin.com/in/karine-santos-8023b6127/) [Karine Carolina dos Santos](https://github.com/Karinecasant)  
+- [![Linkedin Badge](https://img.shields.io/badge/-Natália-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mauricionazario/)](https://www.linkedin.com/in/mauricionazario/)[Mauricio Nazario do Carmo](https://github.com/Mauricio-Nazario)
+- [![Linkedin Badge](https://img.shields.io/badge/-Maurício-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/natalialfbotelho/)](https://www.linkedin.com/in/natalialfbotelho/) [Natalia Luiza Freire Botelho](https://github.com/natalialfbotelho)  
+- [![Linkedin Badge](https://img.shields.io/badge/-Sigrid-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sigrid-rodrigues/)](https://www.linkedin.com/in/sigrid-rodrigues/)[Sigrid Rodrigues](https://github.com/sigrid-fr)
+
 
 # Descrição do desafio 🚀
 ### Criar uma aplicação Selenium com os seguintes casos de teste
