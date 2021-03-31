@@ -71,7 +71,7 @@ e clico no menu serviços<br>
 e clico no item do menu cloud<br>
 Então devo encontrar o título "Serviços de Cloud"<br>
 
-### Caso de teste
+### Caso de teste 3
 Acessar a lista de carreiras da accenture<br>
 
 <b>Cenário</b>: Acessar o item de vagas de tecnologia<br>
@@ -86,7 +86,7 @@ e digito no campo de busca "desenvolvedor"<br>
 e clico no botão procurar<br>
 Então devo encontrar vagas para programadores<br>
 
-### Caso de teste
+### Caso de teste 4
 Sobre a accenture<br>
 
 <b>Cenário</b>: Ver as características da accenture<br>
